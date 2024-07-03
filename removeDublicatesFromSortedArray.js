@@ -16,7 +16,8 @@ var deleteDuplicates = function (head) {
 
   if (head === null) return head;
   do {
-    let isIn = track.indexOf(temp.val);
+      let isIn = track.indexOf(temp.val);
+      
     if (isIn === -1) {
       track.push(temp.val);
       prev = temp;
